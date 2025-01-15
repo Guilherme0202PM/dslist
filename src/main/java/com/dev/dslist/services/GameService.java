@@ -1,0 +1,20 @@
+package com.dev.dslist.services;
+
+import java.util.List;
+
+import com.dev.dslist.dto.GameDTO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.dev.dslist.dto.GameMinDTO;
+import com.dev.dslist.entities.Game;
+import com.dev.dslist.repositories.GameRepository;
+
+@Service 
+public class GameService {
+
+    
+
+}
