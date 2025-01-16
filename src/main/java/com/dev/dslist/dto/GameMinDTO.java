@@ -1,6 +1,6 @@
 package com.dev.dslist.dto;
 
-import com.devr.dslist.entities.Game;
+import com.dev.dslist.entities.Game;
 
 public class GameMinDTO {
 
@@ -11,12 +11,13 @@ public class GameMinDTO {
     private String shortDescription;
 
     public GameMinDTO(Game entity) {
-        id = entity.getId(); 
+        id = entity.getId();
         title = entity.getTitle();
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
     }
+
     public Long getId() {
         return id;
     }

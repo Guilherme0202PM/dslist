@@ -15,10 +15,10 @@ import com.dev.dslist.repositories.GameRepository;
 @Service 
 public class GameService {
 
-    @Autowired  
-    private GameRepository gameRepository;  
-
-    @Transactional(readOnly = true)
+    @Autowired 
+    private GameRepository gameRepository; 
+    
+    @Transactional(readOnly = true) 
     public GameDTO findById(@PathVariable Long listId) {
         Game result = gameRepository.findById(listId).get();
         return new GameDTO(result);
