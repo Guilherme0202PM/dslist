@@ -1,22 +1,22 @@
-package com.devsuperior.dslist.dto;
+package com.dev.dslist.dto;
 
-import com.devsuperior.dslist.entities.GameList;
+import com.dev.dslist.entities.GameList;
 
 public class GameListDTO {
 
-    private Long id;
-    private String name;
+	private Long id;
+	private String name;
+	
+	public GameListDTO(GameList entity) {
+		id = entity.getId();
+		name = entity.getName();
+	}
 
-    public GameListDTO(GameList entity) {
-        id = entity.getId();
-        name = entity.getName();
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+		return name;
+	}
 }
